@@ -1,6 +1,7 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+body{
+    background: linear-gradient(bisque , aqua 80%);background: linear-gradient(bisque , aqua 80%); 
+    height: 100vh;
+    width: 100%;
 }
 
 h1 {
@@ -45,4 +46,10 @@ button {
 
 .eliminar {
   color: red;
+}
+.centro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15PX;
 }

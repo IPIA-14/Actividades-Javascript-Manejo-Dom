@@ -22,18 +22,19 @@ botonAgregar.addEventListener("click", () => {
 
   // Crear icono check
   const iconoCheck = document.createElement("span");
-  iconoCheck.innerHTML = "✔️";
+  iconoCheck.innerHTML = "X";
   iconoCheck.className = "icono no-realizada";
 
   // Alternar color al hacer clic
   iconoCheck.addEventListener("click", () => {
+    console.log("Haz clic en el icono");
     iconoCheck.classList.toggle("realizada");
-    iconoCheck.classList.toggle("no-realizada");
+    //iconoCheck.classList.toggle("no-realizada");
   });
 
   // Crear icono eliminar
   const iconoEliminar = document.createElement("span");
-  iconoEliminar.innerHTML = "❌";
+  iconoEliminar.innerHTML = "⚠️";
   iconoEliminar.className = "icono eliminar";
 
   // Confirmar y eliminar tarea al hacer clic

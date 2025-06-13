@@ -12,24 +12,20 @@ botonAgregar.addEventListener("click", () => {
     return;
   }
 
-  // Crear contenedor de tarea
-  const divTarea = document.createElement("div");
+  const divTarea = document.createElement("div");  // Crear contenedor de tarea
   divTarea.className = "tarea";
 
-  // Crear texto de la tarea
-  const textoTarea = document.createElement("span");
+  const textoTarea = document.createElement("span"); // para  rear texto de la tarea
   textoTarea.textContent = texto;
 
-  // Crear icono check
-  const iconoCheck = document.createElement("span");
+  const iconoCheck = document.createElement("span"); //  Crear icono check para cambiar el collor
   iconoCheck.innerHTML = "X";
   iconoCheck.className = "icono no-realizada";
 
-  // Alternar color al hacer clic
   iconoCheck.addEventListener("click", () => {
     console.log("Haz clic en el icono");
     iconoCheck.classList.toggle("realizada");
-    //iconoCheck.classList.toggle("no-realizada");
+    //iconoCheck.classList.toggle("no realizada");
   });
 
   // Crear icono eliminar
@@ -44,14 +40,13 @@ botonAgregar.addEventListener("click", () => {
     }
   });
 
-  // Armar tarea
   divTarea.appendChild(textoTarea);
   divTarea.appendChild(iconoCheck);
   divTarea.appendChild(iconoEliminar);
 
-  // Agregar a la lista
-  listaTareas.appendChild(divTarea);
 
-  // Limpiar input
-  inputTarea.value = "";
+  listaTareas.appendChild(divTarea);   // Agregar a la lista
+
+  
+  inputTarea.value = ""; // limpiar todo el texto o lo que hay en la pantalla
 });

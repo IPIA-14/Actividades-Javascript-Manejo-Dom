@@ -6,14 +6,33 @@ body{
 .enlace{
     color: white;
     font-family: monospace;
+    text-align: center;
 }
 .titulo{
     color: rgb(0, 0, 0);
     font-family: monospace;
+    text-align: center;
 }
 .centro{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 15PX;
+}
+.boton{
+    display: inline-block;
+    background-color: rgb(255, 213, 0);
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(255, 213, 0);
+    font-family: monospace;
+}
+.boton:hover{
+    background-color: rgb(236, 10, 10);
+    color: black;  
 }

@@ -4,7 +4,7 @@ body{
     width: 100%;
 }
 #clickMe{
-    background-color: rgb(237, 222, 105);
+    background-color: green;
     width: 80px;
     height: 30px;
     border: 1px solid black;
@@ -15,7 +15,7 @@ body{
     margin: 5px;
 }
 #removeEvent{
-    background-color: rgb(237, 222, 105);
+    background-color: rgb(247, 1, 1);
     width: 80px;
     height: 30px;
     border: 1px solid black;
@@ -43,4 +43,21 @@ body{
     align-items: center;
     justify-content: center;
     margin: 15PX;
+}
+.boton{
+    display: inline-block;
+    background-color: rgb(255, 213, 0);
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(255, 213, 0);
+    font-family: monospace;
+}
+.boton:hover{
+    background-color: rgb(236, 10, 10);
+    color: black;  
 }
